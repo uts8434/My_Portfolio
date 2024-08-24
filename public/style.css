@@ -110,7 +110,7 @@ header{
 
 .toggle{
     position: absolute;
-    right: 5em;
+    right: 3em;
     color: white;
     display: none;
 }
@@ -151,9 +151,9 @@ header{
     font-size: 30px;
     /* padding: 8px; */
 }
-.greet>h1{
+.greet>h2{
 
-    font-size: 3rem;
+    font-size: 1rem;
     margin: 0;
     display: flex;
     justify-content: center;
