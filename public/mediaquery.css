@@ -10,6 +10,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
+  }
+  .logo{
+    text-align: left;
+  }
+  .tagline{
+    font-size:1px ;
   }
 
   .sillgain {
@@ -25,7 +32,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3em;
   }
+
 
   .main-navigation {
     display: flex;

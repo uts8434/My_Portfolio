@@ -83,6 +83,7 @@ body,html{
      display: flex;
      justify-content: space-between;
      align-items: center;
+     
 }
 header{
    background-color: black;
@@ -513,7 +514,7 @@ header{
 }
 .resumecol>p{
     text-align: justify;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     color: #333;
     font-weight: 400;
