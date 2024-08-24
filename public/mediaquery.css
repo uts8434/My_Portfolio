@@ -78,7 +78,21 @@
     padding: unset;
     margin: unset;
   }
-
+  .smoothscroll:hover{
+    background-color: #CC005F;
+    color:wheat;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transform: unset;
+    opacity: unset;
+}
+.main-navigation > li:hover{
+  background-color: #ddda;
+  transform: scale(1);
+   transition:  background-color 1.5s ease-in;
+ 
+  
+}
 
 
 
