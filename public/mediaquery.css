@@ -186,7 +186,16 @@
 .inner_services-intro>p{
     text-align: justify;
 }
-
+.footer{
+  display: flex;
+  flex-direction: column;
+}
+.footer-social{
+  margin-top: 5%;
+}
+.copyright{
+font-size: 10px;
+}
 
 
 
