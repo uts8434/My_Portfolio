@@ -330,6 +330,22 @@
     margin: unset;
   }
 
+  .smoothscroll:hover{
+    background-color: #CC005F;
+    color:wheat;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transform: unset;
+    opacity: unset;
+}
+.main-navigation > li:hover{
+  background-color: #ddda;
+  transform: scale(1);
+   transition:  background-color 1.5s ease-in;
+ 
+  
+}
+
   .toggle {
     display: flex;
     justify-content: center;
@@ -353,7 +369,10 @@
 
 
   .typing-animation>span {
-    font-size: .5em;
+    font-size: 1.5em;
+  }
+  .greet>h2{
+    padding: .5em 0;
   }
 
   .greet {
@@ -365,7 +384,7 @@
 
   .intro-social {
     position: relative;
-    top: -12%;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -429,6 +448,9 @@ font-size: 1em;
   .aboutdetails>p,
   .inner_intro-info>p {
     text-align: justify;
+  }
+  .inner_contact_intro{
+    width: 80%;
   }
 
 
@@ -502,6 +524,11 @@ font-size: 1em;
     text-align: center;
   }
 
+
+  #go-top{
+    right: 10px;
+    bottom: 10px;
+  }
 
 
 
@@ -759,6 +786,7 @@ font-size: 1em;
   .main-navigation {
     gap: 2em;
   }
+  
 }
 
 
@@ -768,9 +796,10 @@ font-size: 1em;
     display: flex;
 
   }
+  
 
   .logo-link {
-
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -785,5 +814,9 @@ font-size: 1em;
 
   .main-navigation {
     gap: 2.5em;
+  }
+  .typing-animation>span{
+    font-size: 2em;
+    padding: .3em 0;
   }
 }

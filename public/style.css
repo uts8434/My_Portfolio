@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     /* color: white; */
-    font-family: "Roboto Serif", system-ui;
 }
 :root{
     --text-color1: white;
@@ -69,11 +68,12 @@ body,html{
     color: wheat;
 }
 .logo-link .tagline {
-    font-family: "Roboto", sans-serif;
-    font-size: 0.7em;
+    font-family: inherit;
+    font-size: 0.95em;
     color: #CC005F ; /* Gold color for the tagline */
     margin-left: 10px;
     transition: color 0.3s ease;
+    letter-spacing: .2em;
 }
 
 .logo-link:hover .tagline {
@@ -758,7 +758,7 @@ margin-top: 3%;
 .contact-info{
     display: flex;
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
     gap: 5em;
     margin-top: 3em;
     margin-bottom: 3em;
