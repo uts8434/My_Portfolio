@@ -1,17 +1,24 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 // Create Express app
 const app = express();
 const port = 8080;
 
-// Serve static files from 'public' directory
-app.use(express.static('public'));
-
 // Middleware for parsing form data
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+// Serve static files from 'public' directory
+// Serve static files from the public folder
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 
 // Create a transporter object using Gmail SMTP
 const transporter = nodemailer.createTransport({

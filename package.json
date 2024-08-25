@@ -11,8 +11,8 @@
   "author": "Utsav Kumar singh",
   "license": "ISC",
   "dependencies": {
-    "@vercel/node": "^3.2.9",
     "express": "^4.19.2",
-    "nodemailer": "^6.9.14"
+    "nodemailer": "^6.9.14",
+    "body-parser": "^1.19.0"
   }
 }
