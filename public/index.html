@@ -11,6 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Khula:wght@300;400;600;700;800&family=Noto+Sans+Khojki&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
         rel="stylesheet">
@@ -460,31 +461,73 @@
             </div> <!-- /col-twelve -->
 
         </div> <!-- /resume-timeline -->
+
+    </section>
+    <section style="padding-bottom: 2%; padding-top: 2%; background-color: whitesmoke;">
         <div class="row resume-timeline">
-
             <div class="col-twelve resume-header">
-
-                <h2>Certification</h2>
-
-            </div> <!-- /resume-header -->
-
-            <div class="parent_certification">
-                <div class="certification">
-                    <i class="fa-solid fa-certificate"></i>
-                    <p>5+ Certification</p>
-
-
-                </div>
-                <div class="certification">
-                    <a target="_blank"
-                        href="https://drive.google.com/drive/folders/15wvKxH7RqjoBJsq3dXxXhUgdj1YEzbEa">click
-                        here</a>
-
-                </div>
-
+                <h2>Projects</h2>
             </div>
-
+            <div class="projects-container">
+                <div class="project-card" onclick="toggleDetails(this)">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-key project-icon"></i>
+                    </div>
+                    <h3>Password Generator</h3>
+                    <p>Developed using React.js</p>
+                    <div class="project-details">A secure password generator with customizable options.</div>
+                </div>
+        
+                <div class="project-card" onclick="toggleDetails(this)">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-file-invoice project-icon"></i>
+                    </div>
+                    <h3>Invoice Generator</h3>
+                    <p>Developed using React.js</p>
+                    <div class="project-details">An automated invoice creation tool with PDF export.</div>
+                </div>
+        
+                <div class="project-card" onclick="toggleDetails(this)">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-calendar-check project-icon"></i>
+                    </div>
+                    <h3>Doctor Appointment Portal</h3>
+                    <p>Built with PHP & MySQL</p>
+                    <div class="project-details">A booking system for scheduling doctor appointments.</div>
+                </div>
+        
+                <div class="project-card" onclick="toggleDetails(this)">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-wallet project-icon"></i>
+                    </div>
+                    <h3>Expense Tracker</h3>
+                    <p>Developed using React.js</p>
+                    <div class="project-details">A budget management app with real-time tracking.</div>
+                </div>
+        
+                <div class="project-card" onclick="toggleDetails(this)">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-droplet project-icon"></i>
+                    </div>
+                    <h3>Water Bill Generator</h3>
+                    <p>Developed in Java</p>
+                    <div class="project-details">A Java-based system to generate water bills efficiently.</div>
+                </div>
+            </div>
         </div>
+        
+        <script>
+            function toggleDetails(selectedCard) {
+                document.querySelectorAll('.project-card').forEach(card => {
+                    if (card !== selectedCard) {
+                        card.classList.remove('active');
+                    }
+                });
+                selectedCard.classList.toggle('active');
+            }
+        </script>
+        
+              
 
     </section> <!-- /features -->
 
